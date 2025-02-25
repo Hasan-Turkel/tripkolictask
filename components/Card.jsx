@@ -17,7 +17,7 @@ const Card = ({sale}) => {
          {sale?.type}
         </div>
         <button className="absolute top-2 right-2 bg-white p-1 rounded-full shadow  ">
-        <HeartIcon aria-hidden="true" className="size-6" />
+        <HeartIcon aria-hidden="true" className="size-6 text-black" />
         </button>
       </div>
       <div className="px-2 py-3">
