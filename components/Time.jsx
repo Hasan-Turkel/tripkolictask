@@ -37,7 +37,7 @@ const Time = ({ filters, setFilters }) => {
         <div className="col-span-2">
           <input
             type="time"
-            className="w-full mt-2 p-1 border rounded text-center"
+            className="w-full mt-2 p-1 border rounded text-center text-black"
             value={`${String(Math.floor(filters?.time / 60)).padStart(2, "0")}:${String(
               filters?.time % 60
             ).padStart(2, "0")}`}
@@ -45,27 +45,7 @@ const Time = ({ filters, setFilters }) => {
           />
         </div>
       </div>
-      <style>
-        {`
-          input[type="range"]::-webkit-slider-thumb {
-            appearance: none;
-            width: 25px;
-            height: 25px;
-            background: #F2A945;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid white;
-          }
-          input[type="range"]::-moz-range-thumb {
-            width: 25px;
-            height: 25px;
-            background: #F2A945;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid white;
-          }
-        `}
-      </style>
+    
     </div>
   );
 };

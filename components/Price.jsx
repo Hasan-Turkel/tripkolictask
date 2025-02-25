@@ -35,34 +35,14 @@ const Price = ({ filters, setFilters }) => {
 
         <input
           type="number"
-          className="mt-2 p-1 w-full border rounded-lg text-center "
+          className="mt-2 p-1 w-full border rounded-lg text-center text-black"
           value={filters?.price}
           onChange={handlePriceChange}
         />
         </div>
       </div>
 
-      <style>
-        {`
-          input[type="range"]::-webkit-slider-thumb {
-            appearance: none;
-            width: 25px;
-            height: 25px;
-            background: #F2A945;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid white;
-          }
-          input[type="range"]::-moz-range-thumb {
-            width: 25px;
-            height: 25px;
-            background: #F2A945;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid white;
-          }
-        `}
-      </style>
+     
     </div>
   );
 };

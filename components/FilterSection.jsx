@@ -8,14 +8,14 @@ const FilterSection = ({ filters, setFilters }) => {
   return (
     <section>
       <div className="my-2">
-        <h3 className="font-bold">Location</h3>
+        <h3 className="font-bold text-black">Location</h3>
         <div className="border rounded-lg  px-2 flex justify-between">
           <input
             value={filters?.location || ""}
             onChange={(e) =>
               setFilters({ ...filters, location: e.target.value })
             }
-            className="border-none outline-none"
+            className="border-none outline-none text-black"
             type="text"
             placeholder="where you wanna visit..."
           />
@@ -24,7 +24,7 @@ const FilterSection = ({ filters, setFilters }) => {
       </div>
 
       <div className="my-2">
-        <h3 className="font-bold">Theme</h3>
+        <h3 className="font-bold text-black">Theme</h3>
         <div className="flex gap-2">
           {theme?.map((item, i) => (
             <p
@@ -32,8 +32,8 @@ const FilterSection = ({ filters, setFilters }) => {
               key={i}
               className={
                 filters?.theme?.includes(item)
-                  ? "border rounded-lg px-1 text-xs bg-primary-400"
-                  : "border rounded-lg px-1 text-xs"
+                  ? "border rounded-lg px-1 text-xs bg-primary-400 text-black"
+                  : "border rounded-lg px-1 text-xs text-black"
               }
               onClick={() =>
                 setFilters({
@@ -51,7 +51,7 @@ const FilterSection = ({ filters, setFilters }) => {
       </div>
 
       <div className="my-2">
-        <h3 className="font-bold">Activity</h3>
+        <h3 className="font-bold text-black">Activity</h3>
         <div className="flex gap-2">
           {activity?.map((item, i) => (
             <p
@@ -59,8 +59,8 @@ const FilterSection = ({ filters, setFilters }) => {
               key={i}
               className={
                 filters?.activity?.includes(item)
-                  ? "border rounded-lg px-1 text-xs bg-primary-400"
-                  : "border rounded-lg px-1 text-xs"
+                  ? "border rounded-lg px-1 text-xs bg-primary-400 text-black"
+                  : "border rounded-lg px-1 text-xs text-black"
               }
               onClick={() =>
                 setFilters({
@@ -79,26 +79,26 @@ const FilterSection = ({ filters, setFilters }) => {
         </div>
       </div>
       <div>
-        <h3 className="font-bold">Price</h3>
+        <h3 className="font-bold text-black">Price</h3>
         <div className="flex gap-2">
           <Price filters={filters} setFilters={setFilters}/>
         </div>
       </div>
       <div>
-        <h3 className="font-bold">Start Time</h3>
+        <h3 className="font-bold text-black">Start Time</h3>
         <div className="flex gap-2">
           <Time filters={filters} setFilters={setFilters}/>
         </div>
       </div>
       <div>
-        <h3 className="font-bold">Group Size</h3>
+        <h3 className="font-bold text-black">Group Size</h3>
         <div className="flex gap-2">
           <GroupSize filters={filters} setFilters={setFilters}/>
         </div>
       </div>
 
       <div className="my-2">
-        <h3 className="font-bold">Vehicle</h3>
+        <h3 className="font-bold text-black">Vehicle</h3>
         <div className="flex gap-2">
           {vehicle?.map((item, i) => (
             <p
@@ -106,8 +106,8 @@ const FilterSection = ({ filters, setFilters }) => {
               key={i}
               className={
                 filters?.vehicle?.includes(item)
-                  ? "border rounded-lg px-1 text-xs bg-primary-400"
-                  : "border rounded-lg px-1 text-xs"
+                  ? "border rounded-lg px-1 text-xs bg-primary-400 text-black"
+                  : "border rounded-lg px-1 text-xs text-black"
               }
               onClick={() =>
                 setFilters({
@@ -124,7 +124,7 @@ const FilterSection = ({ filters, setFilters }) => {
         </div>
       </div>
       <div className="my-2">
-        <h3 className="font-bold">Features</h3>
+        <h3 className="font-bold text-black">Features</h3>
         <div className="flex gap-2">
           {features?.map((item, i) => (
             <p
@@ -132,8 +132,8 @@ const FilterSection = ({ filters, setFilters }) => {
               key={i}
               className={
                 filters?.features?.includes(item)
-                  ? "border rounded-lg px-1 text-xs bg-primary-400"
-                  : "border rounded-lg px-1 text-xs"
+                  ? "border rounded-lg px-1 text-xs bg-primary-400 text-black"
+                  : "border rounded-lg px-1 text-xs text-black"
               }
               onClick={() =>
                 setFilters({
