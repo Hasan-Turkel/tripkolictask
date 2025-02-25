@@ -51,7 +51,7 @@ const FilterModal = () => {
                 role="button"
                 onClick={() => setFilterModal(false)}
               >
-                <XCircleIcon className="size-6 " />
+                <XCircleIcon className="size-6 text-black " />
               </div>
               <div className="sm:flex sm:items-start">
                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
